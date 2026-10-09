@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050b14">
+  <title>JARVIS | Personal Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <div class="top">
+      <div class="brand">J.A.R.V.I.S.</div>
+      <div class="status"><span id="statusDot"></span><span id="status">SYSTEM READY</span></div>
+    </div>
+
+    <section class="core-section">
+      <div class="core" id="core">
+        <div class="core-inner">
+          <div class="arc">J</div>
+        </div>
+      </div>
+      <h1>JARVIS</h1>
+      <p class="subtitle">PERSONAL AI ASSISTANT</p>
+      <p id="message" aria-live="polite">Good day. How can I help you?</p>
+    </section>
+
+    <section class="controls">
+      <button id="talkBtn" class="primary">🎙 TAP TO TALK</button>
+      <button id="stopBtn" class="secondary">■ STOP SPEAKING</button>
+    </section>
+
+    <section class="transcript">
+      <div class="label">YOU SAID</div>
+      <p id="heard">Waiting for your command...</p>
+      <div class="label">JARVIS RESPONSE</div>
+      <p id="reply">All systems are ready.</p>
+    </section>
+
+    <section class="commands">
+      <div class="label">TRY THESE COMMANDS</div>
+      <div class="chips">
+        <button data-command="Hello Jarvis">Hello</button>
+        <button data-command="What time is it">Time</button>
+        <button data-command="What is today's date">Date</button>
+        <button data-command="Open YouTube">Open YouTube</button>
+        <button data-command="Open Google">Open Google</button>
+        <button data-command="Who are you">Who are you?</button>
+      </div>
+    </section>
+
+    <footer>JARVIS WEB EDITION · v1.3</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
